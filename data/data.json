@@ -1,0 +1,134 @@
+{
+  "experience": [
+    {
+      "company": "Testsigma",
+      "role": "Senior Software Developer",
+      "period": "Apr 2025 — Present",
+      "location": "Bengaluru, India",
+      "url": "https://testsigma.com",
+      "achievements": [
+        "Integrated Amplitude for advanced user-behavior analytics, enabling data-driven decisions that improved feature adoption by 25% and reduced drop-offs by 15%.",
+        "Led the Jira Marketplace integration to streamline workflows and enable seamless collaboration, driving a 15% increase in test cases generated and added to Jira."
+      ],
+      "stack": [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "AWS S3",
+        "AWS SNS",
+        "Redux Toolkit"
+      ]
+    },
+    {
+      "company": "Comviva",
+      "role": "Tech Lead",
+      "period": "Jul 2022 — Apr 2025",
+      "location": "Bengaluru, India",
+      "url": "https://comviva.com",
+      "achievements": [
+        "Built a custom authentication integration library that let clients plug in their own providers (Keycloak, MSAL) without touching the core app — onboarding 5+ auth providers across 10+ client environments within three months.",
+        "Developed and optimized RESTful APIs and implemented AWS S3 lifecycle policies, reducing storage costs by 28% while keeping the system scalable and reliable."
+      ],
+      "stack": [
+        "React",
+        "TypeScript",
+        "Node.js",
+        "Express.js",
+        "AWS S3",
+        "CloudFront",
+        "CloudWatch",
+        "Redux Toolkit"
+      ]
+    },
+    {
+      "company": "Acute Informatics",
+      "role": "Software Developer",
+      "period": "Jan 2023 — Jun 2023",
+      "location": "Ahmedabad, India",
+      "url": "https://www.acuteinformatics.co.in/",
+      "achievements": [
+        "Led development of audit software for banks, analyzing 10L+ transactions monthly and reducing processing time by 30% for more efficient audits.",
+        "Designed and optimized a Loan Origination System (LOS) covering CIBIL score analysis, document management, and compliance checks — cutting loan approval time by 65%."
+      ],
+      "stack": [
+        "JavaScript",
+        "React",
+        "Node.js",
+        "Express.js",
+        "Redis",
+        "Sequelize",
+        "TypeScript"
+      ]
+    },
+    {
+      "company": "Tatvasoft",
+      "role": "Software Engineer",
+      "period": "Jul 2021 — Jan 2023",
+      "location": "Ahmedabad, India",
+      "url": "https://www.tatvasoft.com/",
+      "achievements": [
+        "Delivered a scalable healthcare EHRM solution adopted by 10+ clinics and hospitals, increasing patient engagement by 20% and improving data-management efficiency by 30%.",
+        "Built video-call functionality with Twilio for remote consultations, reducing in-person appointments by 30% and improving access for remote patients."
+      ],
+      "stack": ["JavaScript", "React", "TypeScript", "Redux Toolkit", "Twilio"]
+    }
+  ],
+  "projects": [
+    {
+      "title": "use-shortcut",
+      "role": "Open source · npm package",
+      "year": "2025",
+      "summary": "A tiny (~1KB), zero-dependency, fully-typed React hook for keyboard shortcuts. Cross-platform mod (⌘/Ctrl), array bindings, input skipping, element-scoped listeners, scoped providers, and always-fresh callbacks — no stale closures.",
+      "stack": ["React", "TypeScript"],
+      "links": {
+        "live": "https://use-shortcut-playground.vercel.app/",
+        "source": "https://github.com/dhruvilshah191999/use-shortcut",
+        "npm": "https://www.npmjs.com/package/@dhruvilshah191999/use-shortcut"
+      },
+      "image": "/projects/use-shortcut.png"
+    },
+    {
+      "title": "TimeLens",
+      "role": "Solo project · Chrome extension",
+      "year": "2026",
+      "summary": "A privacy-first Manifest V3 Chrome extension that tracks where your time goes online and classifies it by intent (Learning, Work, Entertainment…) instead of just by domain. A fast deterministic ruleset handles common cases while on-device Gemini Nano refines ambiguous pages — and nothing ever leaves the browser: no telemetry, no cloud, no history permission.",
+      "stack": ["TypeScript", "React 19", "MV3", "Gemini Nano", "Tailwind"],
+      "links": { "live": "", "source": "", "chrome": "" },
+      "image": "/projects/TimeLens.png"
+    },
+    {
+      "title": "Crossify",
+      "role": "Backend Developer · Team project",
+      "year": "2021",
+      "summary": "A geolocation-based community platform where people create and run interest 'clubs', host real-world events, and chat in moderated rooms. As the backend developer I built the Express/MongoDB REST APIs, role-based access for creators, moderators and members, Socket.io real-time chat rooms, and location-aware club/event search.",
+      "stack": ["Node.js", "Express.js", "MongoDB", "Socket.io", "REST APIs"],
+      "links": {
+        "live": "",
+        "source": "https://github.com/dhruvilshah191999/Crossify"
+      },
+      "image": "/projects/crossify.png"
+    },
+    {
+      "title": "DevTools Playground",
+      "role": "Open source · web app",
+      "year": "2026",
+      "summary": "An ad-free, privacy-first suite of 8 developer tools (JSON formatter, JWT decoder, regex tester, cron parser…) behind a Cmd+K palette — all running client-side, no login or database. Tool state is encoded in the URL hash so links are shareable but never sent to a server, with one optional streaming AI endpoint that explains regex/cron/JSON. Every keyboard shortcut runs through my own npm package, use-shortcut.",
+      "stack": [
+        "Next.js 15",
+        "React 19",
+        "TypeScript",
+        "Tailwind v4",
+        "Vercel AI SDK"
+      ],
+      "links": {
+        "live": "",
+        "source": "https://github.com/dhruvilshah191999/devtools-playground",
+        "npm": ""
+      },
+      "image": "/projects/devtools-playground.png"
+    }
+  ]
+}
