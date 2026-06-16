@@ -10,11 +10,15 @@ If the URL is unreachable, the site falls back to its bundled static copy.
 ```
 portfolio/
 ├── data/
-│   └── data.json        # experience + projects (the live content)
-├── use-shortcut.png
-├── timelens.png
-├── crossify.png
-└── devtools-playground.png
+│   └── data.json                    # experience + projects (the live content)
+└── assets/
+    ├── images/                      # project banner images
+    │   ├── use-shortcut.png
+    │   ├── TimeLens.png
+    │   ├── crossify.png
+    │   └── devtools-playground.png
+    └── resume/
+        └── Dhruvil_Resume.pdf       # downloadable résumé
 ```
 
 ## data.json shape
@@ -44,9 +48,10 @@ portfolio/
         "source": "https://github.com/…",
         "npm": "https://www.npmjs.com/package/…"
       },
-      "image": "https://raw.githubusercontent.com/<user>/portfolio/main/images/projects/use-shortcut.png"
+      "image": "https://raw.githubusercontent.com/<user>/portfolio/master/assets/images/use-shortcut.png"
     }
-  ]
+  ],
+  "resumeUrl": "https://raw.githubusercontent.com/<user>/portfolio/master/assets/resume/Dhruvil_Resume.pdf"
 }
 ```
 
@@ -54,11 +59,14 @@ portfolio/
 
 - **`links`** — any of `live`, `source`, `npm`, `chrome` may be present or
   empty (`""`). Empty/missing links simply don't render their icon.
-- **`image`** — a fully-qualified raw GitHub URL to a file in `images/`. To add
-  a banner: drop the file in `images/projects/`, then point `image` at its raw
-  URL (see below). Use a wide banner (~2.4:1, e.g. 1000×420).
+- **`image`** — a fully-qualified raw GitHub URL to a file in `assets/images/`.
+  To add a banner: drop the file in `assets/images/`, then point `image` at its
+  raw URL (see below). Use a wide banner (~2.4:1, e.g. 1000×420).
 - Cards render in array order; the visible number (00, 01, …) follows the order
   here.
+- **`resumeUrl`** — a top-level field (sibling to `experience`/`projects`)
+  holding the raw GitHub URL to the résumé PDF in `assets/resume/`. The site's
+  résumé link/download points here.
 
 ## Raw URL format
 
@@ -72,10 +80,13 @@ Examples (replace `<user>` and the branch — `main` or `master`):
 
 ```
 # the data file
-https://raw.githubusercontent.com/<user>/portfolio/main/data/data.json
+https://raw.githubusercontent.com/<user>/portfolio/master/data/data.json
 
 # a project image
-https://raw.githubusercontent.com/<user>/portfolio/main/images/projects/crossify.png
+https://raw.githubusercontent.com/<user>/portfolio/master/assets/images/crossify.png
+
+# the résumé PDF
+https://raw.githubusercontent.com/<user>/portfolio/master/assets/resume/Dhruvil_Resume.pdf
 ```
 
 Point the site at the data file by setting its `VITE_DATA_URL` env var to the
@@ -83,7 +94,8 @@ Point the site at the data file by setting its `VITE_DATA_URL` env var to the
 
 ## Updating content
 
-1. Edit `data/data.json` (and/or add an image under `images/projects/`).
+1. Edit `data/data.json` (and/or add an image under `assets/images/`, or replace
+   the PDF under `assets/resume/`).
 2. Validate the JSON (e.g. `python -m json.tool data/data.json`, or paste into
    any JSON linter).
 3. Commit and push to the default branch.
