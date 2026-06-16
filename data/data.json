@@ -88,7 +88,7 @@
         "source": "https://github.com/dhruvilshah191999/use-shortcut",
         "npm": "https://www.npmjs.com/package/@dhruvilshah191999/use-shortcut"
       },
-      "image": "/projects/use-shortcut.png"
+      "image": "https://raw.githubusercontent.com/dhruvilshah191999/portfolio-data/refs/heads/master/use-shortcut.png"
     },
     {
       "title": "TimeLens",
@@ -97,7 +97,7 @@
       "summary": "A privacy-first Manifest V3 Chrome extension that tracks where your time goes online and classifies it by intent (Learning, Work, Entertainment…) instead of just by domain. A fast deterministic ruleset handles common cases while on-device Gemini Nano refines ambiguous pages — and nothing ever leaves the browser: no telemetry, no cloud, no history permission.",
       "stack": ["TypeScript", "React 19", "MV3", "Gemini Nano", "Tailwind"],
       "links": { "live": "", "source": "", "chrome": "" },
-      "image": "/projects/TimeLens.png"
+      "image": "https://raw.githubusercontent.com/dhruvilshah191999/portfolio-data/refs/heads/master/TimeLens.png"
     },
     {
       "title": "Crossify",
@@ -109,7 +109,7 @@
         "live": "",
         "source": "https://github.com/dhruvilshah191999/Crossify"
       },
-      "image": "/projects/crossify.png"
+      "image": "https://raw.githubusercontent.com/dhruvilshah191999/portfolio-data/refs/heads/master/crossify.png"
     },
     {
       "title": "DevTools Playground",
@@ -128,7 +128,7 @@
         "source": "https://github.com/dhruvilshah191999/devtools-playground",
         "npm": ""
       },
-      "image": "/projects/devtools-playground.png"
+      "image": "https://raw.githubusercontent.com/dhruvilshah191999/portfolio-data/refs/heads/master/devtools-playground.png"
     }
   ]
 }
